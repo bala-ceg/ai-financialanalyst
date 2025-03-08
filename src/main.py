@@ -6,6 +6,7 @@ from langchain.prompts import ChatPromptTemplate
 from src.models import FinancialAnalystState
 from src.tools import get_financials, get_stock_sentiment, perform_technical_analysis
 from src.ppe_utils import charge_for_actor_start, charge_for_model_tokens
+import os
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_API_BASE = os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
