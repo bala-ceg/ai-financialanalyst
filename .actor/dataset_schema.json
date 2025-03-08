@@ -1,0 +1,40 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["ticker", "price-data", "financial_data", "technical_data","sentiment_data","analysis"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "ticker": {
+            "label": "Ticker",
+            "format": "text"
+          },
+          "price-data": {
+            "label": "price-data",
+            "format": "text"
+          },
+          "financial_data": {
+            "label": "financial_data",
+            "format": "text"
+          },
+          "technical_data": {
+            "label": "technical_data",
+            "format": "text"
+          },
+          "sentiment_data": {
+            "label": "sentiment_data",
+            "format": "text"
+          },
+          "analysis": {
+            "label": "analysis",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}
