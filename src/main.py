@@ -7,8 +7,8 @@ from src.models import FinancialAnalystState
 from src.tools import get_financials, get_stock_sentiment, perform_technical_analysis
 from src.ppe_utils import charge_for_actor_start, charge_for_model_tokens
 
-OPENAI_API_KEY = "mdb_1P4vPquIeFC4M4isa8FbIvgavv2qaznt5LoNL4XSPzO9"
-OPENAI_API_BASE = "https://llm.mdb.ai"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_BASE = os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
 
 def fetch_data(state: FinancialAnalystState):
     """Fetch stock data (Fundamentals & Sentiment)."""
