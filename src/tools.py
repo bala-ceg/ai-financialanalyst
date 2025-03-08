@@ -19,7 +19,7 @@ from langchain_core.tools import tool
 from pydantic import BaseModel, Field
 from typing import Dict, Union
 
-ALPHAVANTAGE_KEY = os.getenv("ALPHAVANTAGE_KEY", "9T2UKDAFLQNG1O60")
+ALPHAVANTAGE_KEY = os.getenv("ALPHAVANTAGE_KEY")
 
 ### FUNDAMENTAL ANALYSIS ###
 class FinancialsInput(BaseModel):
