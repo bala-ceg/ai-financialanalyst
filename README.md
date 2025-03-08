@@ -30,46 +30,46 @@ It leverages:
 
 ## 📦 **Installation & Setup**
 ### 1️⃣ Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/ai-financialanalyst.git
 cd ai-financialanalyst
-\`\`\`
+```
 
 ### 2️⃣ Create a Virtual Environment (Optional)
-\`\`\`bash
+```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-\`\`\`
+```
 
 ### 3️⃣ Install Dependencies
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4️⃣ Set API Keys
 Create a `.env` file and add your API keys:
-\`\`\`ini
+```ini
 OPENAI_API_KEY=your-openai-key
 ALPHAVANTAGE_API_KEY=your-alpha-vantage-key
-\`\`\`
+```
 
 ---
 
 ## 🎯 **How to Run Locally**
-\`\`\`bash
-apify run -i input.json
-\`\`\`
+```bash
+apify run --input-file=input.jso
+```
 📜 **Example `input.json`**
-\`\`\`json
+```json
 {
     "ticker": "AAPL"
 }
-\`\`\`
+```
 
 ---
 
 ## 🛠 **Project Structure**
-\`\`\`
+```
 ai-financialanalyst/
 │── src/
 │   ├── main.py         # Apify Actor entry point
@@ -82,13 +82,13 @@ ai-financialanalyst/
 │── README.md           # Project documentation
 │── input.json          # Example input format
 │── .env                # API keys (gitignore this file)
-\`\`\`
+```
 
 ---
 
 ## 📊 **Example Report Output**
 A sample AI-generated **Markdown Report**:
-\`\`\`markdown
+```markdown
 # 📊 AI Financial Analyst Report
 
 ## 📌 **Stock Analysis Report**
@@ -120,8 +120,7 @@ A sample AI-generated **Markdown Report**:
 - **Recent News:**
   - [Apple reports record iPhone sales](https://example.com/news1)
   - [AAPL stock hits all-time high](https://example.com/news2)
-\`\`\`
-
+```
 ---
 
 
