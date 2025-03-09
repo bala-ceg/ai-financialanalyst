@@ -57,7 +57,7 @@ ALPHAVANTAGE_API_KEY=your-alpha-vantage-key
 
 ## 🎯 **How to Run Locally**
 ```bash
-apify run --input-file=input.jso
+apify run --input-file=input.json
 ```
 📜 **Example `input.json`**
 ```json
