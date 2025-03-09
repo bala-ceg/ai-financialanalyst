@@ -28,5 +28,16 @@
         "eventTitle": "Price per 100 OpenAI tokens for gpt-3.5-turbo",
         "eventDescription": "Flat fee for each 100 gpt-3.5-turbo tokens used.",
         "eventPriceUsd": 0.00044
+    },
+    "actor-start": {
+        "eventTitle": "Price for Actor start",
+        "eventDescription": "Flat fee for starting an Actor run.",
+        "eventPriceUsd": 0.1
+    },
+    "task-completed": {
+        "eventTitle": "Price for completing the task",
+        "eventDescription": "Flat fee for completing the task.",
+        "eventPriceUsd": 0.4
     }
+
 }
