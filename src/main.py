@@ -173,7 +173,7 @@ async def main():
     async with Actor:
         actor_input = await Actor.get_input() or {}
         # Charge for actor start
-        await Actor.charge('actor-start')
+        await charge_for_actor_start()
 
         # Validate input using Pydantic
         try:
@@ -185,10 +185,6 @@ async def main():
 
         # Execute the workflow
         final_state = financial_analyst_workflow.invoke(state)
-
-
-        #Charge for task completion
-        await Actor.charge('task-completed')
 
         # Push results to Apify dataset
         await Actor.push_data({
